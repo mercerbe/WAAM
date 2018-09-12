@@ -1,0 +1,23 @@
+{
+  "name": "waam",
+  "version": "1.0.0",
+  "description": "> Mix audio in real time on the web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercerbe/WAAM.git"
+  },
+  "author": "ben mercer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mercerbe/WAAM/issues"
+  },
+  "homepage": "https://github.com/mercerbe/WAAM#readme",
+  "dependencies": {
+    "foundation-sites": "^6.5.0-rc.2",
+    "pizzicato": "^0.6.3"
+  }
+}
