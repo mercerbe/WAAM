@@ -338,7 +338,7 @@
         this.start = 0;
         this.timer = new Timer();
         $('#mixer').append(
-            '<div id="transport"><h1><span>&#9835; Web Audio</span> mixer</h1><div id="display"><div id="time-min">00</div><span>:</span><div id="time-secs">00</div><span>:</span><div id="time-milli">00</div><div class="clear"></div></div><div class="controls"><button id="play">&#9658;</button><button id="pause">||</button></div></div>'
+            '<div id="transport"><h1><span>&#9835; WAAM</span></h1><div id="display"><div id="time-min">00</div><span>:</span><div id="time-secs">00</div><span>:</span><div id="time-milli">00</div><div class="clear"></div></div><div class="controls"><button id="play">&#9658;</button><button id="pause">||</button><button id="start">	&#171;</button></div></div>'
         );
         $('#play').on('click', function() {
             var el = $(this);

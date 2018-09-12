@@ -10,11 +10,11 @@ fill :#000;
 border-radius: 7px;    }
 @font-face{
   font-family: 'digi';
-  src: url('digital-7_mono-webfont.eot');
-  src: url('digital-7_mono-webfont.eot?#iefix') format('embedded-opentype'),
-       url('digital-7_mono-webfont.woff') format('woff'),
-       url('digital-7_mono-webfont.ttf') format('truetype'),
-       url('digital-7_mono-webfont.svg#webfont') format('svg');
+  src: url('fonts/digital-7_mono-webfont.eot');
+  src: url('fonts/digital-7_mono-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/digital-7_mono-webfont.woff') format('woff'),
+       url('fonts/digital-7_mono-webfont.ttf') format('truetype'),
+       url('fonts/digital-7_mono-webfont.svg#webfont') format('svg');
 }
 body {background: #000}
 #mins,#secs,#milli {
@@ -108,7 +108,7 @@ function audioCtx() {
   if(audioCtx) {
         return new audioCtx();
   } else {
-      alert('Web Audio not supported in this browser. Please use a modern browser such as Chrome or Firefox');
+      alert('Web Audio API not supported in this browser. Please use a modern browser such as Chrome or Firefox');
       return;
   }
 };
