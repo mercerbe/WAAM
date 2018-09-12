@@ -557,8 +557,7 @@
 
     //These sources could eventually be loaded from the server
     var sources = [
-        'Acous_Gtr.mp3', 'Strings.mp3','Bass_&_Drums.mp3', 'Mellotron.mp3','Bck_vox.mp3','Stylophone.mp3','Vox.mp3','Flute_&_Cello.mp3'
-
+        'Drum_Mix.wav', 'E_gtr1.wav','E_gtr2.wav', 'Organ.wav','Wurlie.wav','Backing_Vox1.wav','Backing_Vox2.wav','Vocals.wav'
     ];
 
     var channelTemplate = '<div class="channel"></div>';
