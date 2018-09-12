@@ -1,7 +1,7 @@
 @font-face {
     font-family:'digi';
     src:url(../../fonts/digital-7_mono-webfont.eot);
-    src:url(../../fonts/digital-7_mono-webfont.eot?#iefix) format("embedded-opentype"),url(../../fonts/digital-7_mono-webfont.woff) format("woff"),url(digital-7_mono-webfont.ttf) format("truetype"),url(../../fonts/digital-7_mono-webfont.svg#webfont) format("svg")
+    src:url(../../fonts/digital-7_mono-webfont.eot?#iefix) format("embedded-opentype"),url(../../fonts/digital-7_mono-webfont.woff2) format("woff"),url(../../fonts/digital-7_mono-webfont.ttf) format("truetype"),url(../../fonts/digital-7_mono-webfont.svg#webfont) format("svg")
 }
 
 * {
@@ -12,6 +12,13 @@
 body {
     font-family:arial,sans-serif;
     background:#2e302f
+}
+
+.centerLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #container {

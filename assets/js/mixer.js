@@ -380,13 +380,13 @@
             self.offset += self.ctx.currentTime - self.start;
         });
         $('#rewind').on('click', function() {
+          self.timer.stop();
           self.timer.reset();
           $('#transport .controls button').removeClass('on');
           $(this).addClass('on');
           self.playingBack = false;
           self.clearBuffers(true);
           clearInterval(self.playing);
-          self.offset += self.ctx.currentTime - self.start;
         })
     };
 
