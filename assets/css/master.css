@@ -1,7 +1,7 @@
 @font-face {
     font-family:'digi';
-    src:url(digital-7_mono-webfont.eot);
-    src:url(digital-7_mono-webfont.eot?#iefix) format("embedded-opentype"),url(digital-7_mono-webfont.woff) format("woff"),url(digital-7_mono-webfont.ttf) format("truetype"),url(digital-7_mono-webfont.svg#webfont) format("svg")
+    src:url(../../fonts/digital-7_mono-webfont.eot);
+    src:url(../../fonts/digital-7_mono-webfont.eot?#iefix) format("embedded-opentype"),url(../../fonts/digital-7_mono-webfont.woff) format("woff"),url(digital-7_mono-webfont.ttf) format("truetype"),url(../../fonts/digital-7_mono-webfont.svg#webfont) format("svg")
 }
 
 * {

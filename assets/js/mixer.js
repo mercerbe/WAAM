@@ -338,7 +338,7 @@
         this.start = 0;
         this.timer = new Timer();
         $('#mixer').append(
-            '<div id="transport"><h1><span>&#9835; WAAM</span></h1><div id="display"><div id="time-min">00</div><span>:</span><div id="time-secs">00</div><span>:</span><div id="time-milli">00</div><div class="clear"></div></div><div class="controls"><button id="play">&#9658;</button><button id="pause">||</button><button id="start">	&#171;</button></div></div>'
+            '<div id="transport"><h1><span>&#9835; WAAM</span></h1><div id="display"><div id="time-min">00</div><span>:</span><div id="time-secs">00</div><span>:</span><div id="time-milli">00</div><div class="clear"></div></div><div class="controls"><button id="play">&#9658;</button><button id="pause">||</button><button id="rewind">	&#171;</button></div></div>'
         );
         $('#play').on('click', function() {
             var el = $(this);
@@ -379,6 +379,15 @@
             clearInterval(self.playing);
             self.offset += self.ctx.currentTime - self.start;
         });
+        $('#rewind').on('click', function() {
+          self.timer.reset();
+          $('#transport .controls button').removeClass('on');
+          $(this).addClass('on');
+          self.playingBack = false;
+          self.clearBuffers(true);
+          clearInterval(self.playing);
+          self.offset += self.ctx.currentTime - self.start;
+        })
     };
 
     Mixer.prototype.updateDuration = function(duration, t) {

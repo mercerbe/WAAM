@@ -1,7 +1,7 @@
 # WAAM
 > Mix audio in real time on the web
 
-| HTML | CSS | JS | Foundation | Pizzicato | 
+| HTML | CSS | JS | Foundation | Pizzicato |
 
 ![Travis](https://img.shields.io/travis/USER/REPO.svg)
 ![npm](https://img.shields.io/npm/v/npm.svg)
@@ -11,7 +11,7 @@ Web Audio Api Mixer (WAAM)
 
 ## Demo
 
-You can demo this web app on heroku at:  [WAAM](https://serene-river-33810.herokuapp.com/).
+You can demo this web app on heroku at:  [WAAM](https://mercerbe.github.io/WAAM/).
 
 ## Installation
 
