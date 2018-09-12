@@ -290,9 +290,9 @@
         this.channels = [];
         this.el = $('#mixer');
         this.ctx = ctx;
-        //hardcode duration for time being as the tracks are longer than the song is audible
-        //Can't be bothered to open pro tools and trim the mp3s
-        this.duration = 200;
+        //hardcode duration for time being as the tracks are longer than the stems are audible
+        //Can't be bothered to open pro tools and trim the audio, automate duration based on longest loaded stem
+        this.duration = 400;
         this.tracks = tracks;
         self.playingBack = false;
         this.createMasterChannel();
@@ -382,6 +382,7 @@
         $('#rewind').on('click', function() {
           self.timer.stop();
           self.timer.reset();
+          self.offset = self.start = self.elapsed = 0;
           $('#transport .controls button').removeClass('on');
           $(this).addClass('on');
           self.playingBack = false;
@@ -435,7 +436,7 @@
     };
 
     Channel.prototype.createChannelLabel = function() {
-        var trackName = this.trackName.replace('.mp3', '').replace(/_/g,
+        var trackName = this.trackName.replace('.wav', '').replace(/_/g,
             ' ');
         this.el.find('.fader-container').prepend('<p class="label">' +
             trackName + '</p>');
